@@ -1,5 +1,11 @@
-import '@/styles/globals.css'
+import Rum from "@/src/rum";
+import "@/styles/globals.css";
 
 export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <>
+      <Rum />
+      <Component {...pageProps} />
+    </>
+  );
 }
